@@ -99,19 +99,31 @@ Orientasi koordinat dan penempatan komponen dilihat langsung dari **Punggung HP 
 
 ---
 
+5. **Captive Push-Button & Rocker Bar (Sistem Tombol Braun / Cyberdeck):**
+   * **Power Button Cap (`Button_Power_Cap`):** Tombol kapsul independen dengan bibir penahan (*retaining lip*) di sisi dalam sasis, menonjol $1.4\text{ mm}$ ke luar dengan 3 micro-ribs vertikal untuk grip jempol.
+   * **Volume Rocker Bar (`Button_Volume_Rocker`):** Batang rocker memanjang dengan tumpu pivot di tengah dan 2 plunger terpisah untuk Volume Up & Down, dilengkapi embossed "+" dan "-" serta cekungan ergonomis di tengah.
+   * **Mekanisme Drop-In Track:** Tombol dimasukkan dari atas (*slide-in channel*) saat perakitan dan terkunci paten setelah *Front Bezel* dibaut.
+6. **Refined SIM Tray Slot & Ejector Funnel:**
+   * Lubang akses SIM tray di dinding kanan diubah menjadi profil kapsul halus dengan *trumpet chamfer / finger dish* $45^\circ$ di bibir luar.
+   * Dilengkapi corong pemandu pin ejector ($\varnothing 2.8\text{ mm} \to \varnothing 1.4\text{ mm}$) untuk mempermudah mencolok jarum SIM tray tanpa mencakar sasis.
+
+---
+
 ## 5. Daftar File Desain & Cetak (Outputs)
 
 | Nama File | Format | Deskripsi |
 | :--- | :--- | :--- |
 | `Pixel5_DeckCase.FCStd` | FreeCAD Document | File project CAD 3D parametrik lengkap (FreeCAD v1.1) |
-| `Pixel5_Main_Chassis.stl` | STL Mesh | Sasis utama (Pocket HP, Sekat Thermal, Shroud Kamera, Cavity Modul) |
+| `Pixel5_Main_Chassis.stl` | STL Mesh | Sasis utama (Pocket HP, Sekat Thermal, Shroud Kamera, Cavity Modul, Track Tombol Captive) |
 | `Pixel5_Bottom_Cover.stl` | STL Mesh | Pelat penutup bawah + 4 kaki terintegrasi + kisi intake |
 | `Pixel5_Front_Bezel.stl` | STL Mesh | Frame bezel penahan layar sentuh depan |
-| `Pixel5_DeckCase_Enclosure.step` | STEP AP214 | File CAD universal multi-solid untuk software CAD lain |
+| `Pixel5_Button_Power.stl` | STL Mesh | Tombol daya mandiri captive dengan retaining flange & micro-ribs |
+| `Pixel5_Button_Volume.stl` | STL Mesh | Batang rocker volume mandiri captive dengan pivot & tactile "+ / -" |
+| `Pixel5_DeckCase_Enclosure.step` | STEP AP214 | File assembly universal solid untuk integrasi CAD lain |
 
 ---
 
-## 6. Panduan Cetak 3D & Perakitan (Assembly)
+## 6. Rekomendasi Cetak 3D & Fabrikasi
 
 * **Bahan Cetak:** Disarankan **PETG** atau **ABS/ASA** karena memiliki ketahanan termal tinggi ($>75^\circ\text{C}$) saat menerima panas continuous dari heatsink.
 * **Infill & Walls:** Minimal 4 perimeter / wall loops, infill $30–40\%$ (Gyroid / Grid).
