@@ -59,9 +59,12 @@ Orientasi koordinat dan penempatan komponen dilihat langsung dari **Punggung HP 
 * **Ruang Fisik Tersedia:** Lebar $39.4\text{ mm}$ (dari tepi kanan modul kamera ke tepi kanan bodi HP), Tinggi $40.0–42.0\text{ mm}$.
 * **Rekomendasi & Batas Maksimal Kipas:**
   * **Fan 3010 ($30 \times 30 \times 10\text{ mm}$):** Sangat lega, clearance aman ke semua dinding.
-  * **Fan 3510 ($35 \times 35 \times 10\text{ mm}$) [Model Terpasang di CAD]:** Ukuran paling optimal. Meng-cover 90% area hotspot dan sejajar dengan lebar heatsink SSD di bawahnya.
-  * **Fan 4010 / 4020 ($40 \times 40 \times 10/20\text{ mm}$):** Ukuran maksimal absolut. Di kompartemen bawah casing (lebar rongga dalam $72.0\text{ mm}$) muat dengan sangat lega.
-  * **Blower 4010 (Centrifugal):** Opsi alternatif terbaik untuk meniupkan udara horizontal lurus menyusuri celah sirip heatsink SSD ke arah bawah.
+   * **Dual Fan 3510 ($35 \times 35 \times 10\text{ mm}$ x2) [Model Terpasang di CAD]:**
+     * **Fan 1 (Atas):** Tepat di atas hotspot SoC Snapdragon 765G ($Y = 124\text{ mm}$).
+     * **Fan 2 (Bawah):** Tepat di atas sirip Heatsink SSD ($Y = 68\text{ mm}$).
+     * **Air Plenum Gap:** Sisa celah udara bebas **$4.0\text{ mm}$** ke penutup bawah, mencegah *air choking* dan suara desing turbulen.
+   * **Fan 4010 / 4020 ($40 \times 40 \times 10/20\text{ mm}$):** Ukuran maksimal alternatif. Di kompartemen bawah casing (lebar rongga dalam $72.0\text{ mm}$) muat dengan sangat lega.
+   * **Blower 4010 (Centrifugal):** Opsi alternatif terbaik untuk meniupkan udara horizontal lurus menyusuri celah sirip heatsink SSD ke arah bawah.
 
 ### B. Slot Heatsink SSD M.2 (Area Kuning)
 * **Dimensi Heatsink Terpasang:** **$70.0\text{ mm} \times 22.0\text{ mm} \times 4.0\text{ mm}$** (sirip aluminium vertikal).
@@ -69,7 +72,7 @@ Orientasi koordinat dan penempatan komponen dilihat langsung dari **Punggung HP 
 * **Batas Maksimal Dimensi Heatsink:**
   * **Panjang Maksimal:** $72.0\text{ mm}$ (rentang $Y = 32.0$ s/d $104.0\text{ mm}$).
   * **Lebar Maksimal:** $24.0\text{ mm}$ (dapat diekspansi hingga $26.0\text{ mm}$ tanpa mengganggu sensor fingerprint).
-  * **Ketebalan Heatsink:** Standar $4.0\text{ mm}$. Jika ingin memakai heatsink sirip tebal ($6.0–10.0\text{ mm}$), kedalaman kompartemen bawah ($15.0\text{ mm}$) masih mencukupi atau dapat ditingkatkan menjadi $18.0–20.0\text{ mm}$.
+  * **Ketebalan Heatsink:** Standar $4.0\text{ mm}$. Dengan kedalaman kompartemen bawah yang diperdalam menjadi **$18.0\text{ mm}$**, heatsink dengan sirip tebal ($6.0–12.0\text{ mm}$) muat dengan leluasa.
 
 ---
 
@@ -86,9 +89,13 @@ Orientasi koordinat dan penempatan komponen dilihat langsung dari **Punggung HP 
    * **Intake:** Kipas menyedot udara dingin dari kolong bawah meja lewat kisi-kisi penutup bawah.
    * **Heat Exchange:** Udara dingin bertekanan ditiupkan langsung ke area SoC dan menyusuri celah sirip vertikal heatsink SSD.
    * **Exhaust:** Udara panas dibuang keluar lewat **5 slot kisi ventilasi ($15 \times 5\text{ mm}$)** di dinding samping kanan, menjauhi kompartemen baterai dan modul elektronika.
-4. **Kompartemen Modul Elektronika (Area Kiri):**
+4. **Kompartemen Modul Elektronika & Kontrol Daya (Area Kiri):**
    * Ruang kosong bersih seluas $42.0\text{ mm} \times 100.0\text{ mm} \times 15.0\text{ mm}$ di samping kiri heatsink.
-   * Sangat ideal untuk modul step-down Mini-360 / MP1584EN (12V ke 5V fan), port DC jack 5.5x2.1 mm, board trigger USB-C PD, atau saklar switch.
+   * **DC 12V Barrel Jack (5.5x2.1 mm):** Lubang panel mount $\varnothing 8.2\text{ mm}$ di dinding bawah sisi kiri ($X = -22.0\text{ mm}$, $Z = -18.5\text{ mm}$), sejajar dengan port USB-C.
+   * **Fan Mini Toggle Switch:** Lubang saklar tuas $\varnothing 6.2\text{ mm}$ di dinding samping kiri bawah ($Y = 25.0\text{ mm}$, $Z = -18.5\text{ mm}$) untuk kontrol manual on/off kipas.
+   * **Dual 1/4"-20 Tripod Mounts (Kuningan Brass Insert):**
+     * **Orientasi Landscape:** Lubang insert $\varnothing 8.5\text{ mm} \times 9.0\text{ mm}$ dengan *reinforced internal boss* di dinding samping kiri ($Y = 50.0\text{ mm}$, $Z = -18.5\text{ mm}$) untuk posisi monitor meja / deck horizontal.
+     * **Orientasi Portrait:** Lubang insert $\varnothing 8.5\text{ mm} \times 8.0\text{ mm}$ dengan *reinforced boss* di pelat penutup bawah ($X = -12.0\text{ mm}$, $Y = 55.0\text{ mm}$) untuk mounting tripod vertikal.
 
 ---
 
