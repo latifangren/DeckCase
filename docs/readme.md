@@ -109,23 +109,41 @@ Orientasi koordinat dan penempatan komponen dilihat langsung dari **Punggung HP 
 
 ---
 
-## 5. Daftar File Desain & Cetak (Outputs)
+## 5. Dua Varian Desain Tombol (Opsi A vs Opsi B)
 
-| Nama File | Format | Deskripsi |
+Untuk memberikan fleksibilitas saat mencetak dan merakit, tersedia **dua varian sasis** yang keduanya 100% kompatibel dengan komponen lain (*Bottom Cover*, *Front Bezel*, heatsink SSD, dan dual fan):
+
+| Fitur / Parameter | **Varian Opsi A (Captive Retro Sliders)** | **Varian Opsi B (Compliant Flexure — Print-in-Place)** |
 | :--- | :--- | :--- |
-| `Pixel5_DeckCase.FCStd` | FreeCAD Document | File project CAD 3D parametrik lengkap (FreeCAD v1.1) |
-| `Pixel5_Main_Chassis.stl` | STL Mesh | Sasis utama (Pocket HP, Sekat Thermal, Shroud Kamera, Cavity Modul, Track Tombol Captive) |
-| `Pixel5_Bottom_Cover.stl` | STL Mesh | Pelat penutup bawah + 4 kaki terintegrasi + kisi intake |
-| `Pixel5_Front_Bezel.stl` | STL Mesh | Frame bezel penahan layar sentuh depan |
-| `Pixel5_Button_Power.stl` | STL Mesh | Tombol daya mandiri captive dengan retaining flange & micro-ribs |
-| `Pixel5_Button_Volume.stl` | STL Mesh | Batang rocker volume mandiri captive dengan pivot & tactile "+ / -" |
-| `Pixel5_DeckCase_Enclosure.step` | STEP AP214 | File assembly universal solid untuk integrasi CAD lain |
+| **Konsep** | Tombol mekanik perantara terpisah bergaya Braun / Game Boy | Tombol terintegrasi fleksibel menyatu dengan bodi sasis |
+| **File CAD FreeCAD** | `Pixel5_DeckCase.FCStd` | `Pixel5_DeckCase_OptionB.FCStd` |
+| **File STL Sasis** | `Pixel5_Main_Chassis.stl` | `Pixel5_Main_Chassis_OptionB.stl` |
+| **Part Tambahan** | Perlu cetak `Pixel5_Button_Power.stl` & `Pixel5_Button_Volume.stl` | **NOL part tambahan** (100% monolitik dalam 1 kali print) |
+| **Mekanisme Kerja** | Rel vertikal (*drop-in slide track*) dikunci oleh *Front Bezel* | Lengan pegas kantilever (*U-slit flexure blade* $1.4\text{ mm}$, celah $0.8\text{ mm}$) |
+| **Kelebihan** | Sensasi klik mekanis sangat presisi, warna tombol bisa kontras | **Sangat simpel, anti-ribet, tidak ada part kecil yang bisa hilang** |
 
 ---
 
-## 6. Rekomendasi Cetak 3D & Fabrikasi
+## 6. Daftar File Desain & Cetak (Outputs)
 
-* **Bahan Cetak:** Disarankan **PETG** atau **ABS/ASA** karena memiliki ketahanan termal tinggi ($>75^\circ\text{C}$) saat menerima panas continuous dari heatsink.
+| Nama File | Format | Deskripsi |
+| :--- | :--- | :--- |
+| `Pixel5_DeckCase.FCStd` | FreeCAD Document | Model CAD utama Varian Opsi A (Captive Slider Buttons) |
+| `Pixel5_DeckCase_OptionB.FCStd` | FreeCAD Document | Model CAD duplikat Varian Opsi B (Integrated Print-in-Place Buttons) |
+| `Pixel5_Main_Chassis.stl` | STL Mesh | Sasis utama Opsi A (dengan track slide-in untuk tombol mandiri) |
+| `Pixel5_Main_Chassis_OptionB.stl` | STL Mesh | Sasis utama Opsi B (dengan tombol fleksibel kantilever menyatu) |
+| `Pixel5_Bottom_Cover.stl` | STL Mesh | Pelat penutup bawah + 4 kaki terintegrasi + kisi intake (universal A & B) |
+| `Pixel5_Front_Bezel.stl` | STL Mesh | Frame bezel penahan layar sentuh depan (universal A & B) |
+| `Pixel5_Button_Power.stl` | STL Mesh | Tombol daya mandiri untuk Opsi A (dengan retaining lip & ribs) |
+| `Pixel5_Button_Volume.stl` | STL Mesh | Rocker volume mandiri untuk Opsi A (dengan pivot & tactile "+ / -") |
+| `Pixel5_DeckCase_Enclosure.step` | STEP AP214 | File assembly STEP universal untuk Varian Opsi A |
+| `Pixel5_DeckCase_OptionB.step` | STEP AP214 | File assembly STEP universal untuk Varian Opsi B |
+
+---
+
+## 7. Rekomendasi Cetak 3D & Fabrikasi
+
+* **Bahan Cetak:** Disarankan **PETG** atau **ABS/ASA** karena memiliki ketahanan termal tinggi ($>75^\circ\text{C}$) saat menerima panas continuous dari heatsink, serta elastisitas alami (*springback*) yang sangat baik untuk lengan kantilever Opsi B.
 * **Infill & Walls:** Minimal 4 perimeter / wall loops, infill $30–40\%$ (Gyroid / Grid).
 * **Hardware Fasteners:**
   * 4x Baut **M3 x 30 mm** (Socket Head Cap Screw).
