@@ -110,6 +110,15 @@ Orientasi koordinat dan penempatan komponen dilihat langsung dari **Punggung HP 
    * **Port USB-C:** Lubang kotak lama digantikan oleh profil **Stadium Capsule ($13.6 \times 6.6\text{ mm}$, $R = 3.3\text{ mm}$)** dengan **$45^\circ$ Trumpet Flare Lead-in ($16.6 \times 8.2\text{ mm}$)**. Mempermudah colok kabel Type-C ber-collar tebal dan mencegah gesekan tajam.
    * **Dual Speaker & Mic Acoustic Ports:** Lubang kisi kotak kiri & kanan digantikan oleh **dua kapsul horizontal ($12.0 \times 3.8\text{ mm}$, $R = 1.9\text{ mm}$)** dengan **$45^\circ$ acoustic flare ($14.4 \times 5.4\text{ mm}$)** yang menjamin transmisi audio/mikrofon jernih tanpa difraksi suara.
    * **Keselarasan Visual:** Seluruh bukaan luar casing (Tombol, SIM tray, USB-C, Speaker) kini menganut bahasa desain kapsul/stadium seragam bergaya Braun/Dieter Rams.
+8. **Home Swipe Notch (Bezel Depan Ergonomis):**
+   * Cekungan jempol landai (*thumb scoop / scallop*) selebar **$38.0\text{ mm}$** sedalam **$1.4\text{ mm}$** pada bagian tengah bawah *Front Bezel* ($X = -19.0$ s/d $+19.0\text{ mm}$).
+   * Menghilangkan ganjalan bibir bezel saat melakukan navigasi usap ke atas (*swipe up gesture*) untuk kembali ke Home screen Android.
+9. **Fan Wire Routing Clips / Cable Baffles (Pengaman Kabel Internal):**
+   * 2 unit cantelan kabel terintegrasi (*snap-in retention bridges*) pada plafon kompartemen bawah ($X = -6.0\text{ mm}$, $Y = 38.0\text{ mm}$ dan $Y = 92.0\text{ mm}$).
+   * Menjepit rapi kabel DC jack dan saklar rocker agar terkunci di dinding kiri dan **tidak bisa bergeser menyentuh baling-baling kipas 3510**.
+10. **Redesigned 6 Exhaust Vents (Kisi Pembuangan Kapsul):**
+    * 6 lubang pembuangan udara panas di dinding kanan dirombak dari kotak tajam menjadi **Vertical Stadium Capsules ($5.2 \times 8.4\text{ mm}$, $R = 2.6\text{ mm}$)** dengan **$45^\circ$ Trumpet Chamfer ($6.8 \times 10.0\text{ mm}$)**.
+    * Aliran udara panas keluar lebih aerodinamis, minim suara desing, dan bebas bridging saat di-print 3D.
 
 ---
 
