@@ -106,6 +106,10 @@ Orientasi koordinat dan penempatan komponen dilihat langsung dari **Punggung HP 
 6. **Refined SIM Tray Slot & Ejector Funnel:**
    * Lubang akses SIM tray di dinding kanan diubah menjadi profil kapsul halus dengan *trumpet chamfer / finger dish* $45^\circ$ di bibir luar.
    * Dilengkapi corong pemandu pin ejector ($\varnothing 2.8\text{ mm} \to \varnothing 1.4\text{ mm}$) untuk mempermudah mencolok jarum SIM tray tanpa mencakar sasis.
+7. **Redesigned Bottom I/O (USB-C & Dual Acoustic Speaker/Mic Stadium Capsules):**
+   * **Port USB-C:** Lubang kotak lama digantikan oleh profil **Stadium Capsule ($13.6 \times 6.6\text{ mm}$, $R = 3.3\text{ mm}$)** dengan **$45^\circ$ Trumpet Flare Lead-in ($16.6 \times 8.2\text{ mm}$)**. Mempermudah colok kabel Type-C ber-collar tebal dan mencegah gesekan tajam.
+   * **Dual Speaker & Mic Acoustic Ports:** Lubang kisi kotak kiri & kanan digantikan oleh **dua kapsul horizontal ($12.0 \times 3.8\text{ mm}$, $R = 1.9\text{ mm}$)** dengan **$45^\circ$ acoustic flare ($14.4 \times 5.4\text{ mm}$)** yang menjamin transmisi audio/mikrofon jernih tanpa difraksi suara.
+   * **Keselarasan Visual:** Seluruh bukaan luar casing (Tombol, SIM tray, USB-C, Speaker) kini menganut bahasa desain kapsul/stadium seragam bergaya Braun/Dieter Rams.
 
 ---
 
