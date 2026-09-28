@@ -119,10 +119,6 @@ Orientasi koordinat dan penempatan komponen dilihat langsung dari **Punggung HP 
 10. **Redesigned 6 Exhaust Vents (Kisi Pembuangan Kapsul):**
     * 6 lubang pembuangan udara panas di dinding kanan dirombak dari kotak tajam menjadi **Vertical Stadium Capsules ($5.2 \times 8.4\text{ mm}$, $R = 2.6\text{ mm}$)** dengan **$45^\circ$ Trumpet Chamfer ($6.8 \times 10.0\text{ mm}$)**.
     * Aliran udara panas keluar lebih aerodinamis, minim suara desing, dan bebas bridging saat di-print 3D.
-11. **Low-Profile Dovetail Camera Privacy Slider (Penutup Kamera Geser):**
-    * **Mekanisme Rel Captive:** Rel alur tersembunyi dengan bibir penahan (*retaining undercut*) dan stopper ganda (atas-bawah) pada pelat bawah.
-    * **Komponen Slider (`Camera_Privacy_Slider`):** Pelat geser ramping ($33.5 \times 31.4 \times 1.6\text{ mm}$) dengan sayap ekor burung (*dovetail wings*) dan 4 micro-ridges di permukaan untuk grip jempol.
-    * **Dua Posisi Kerja:** Geser ke atas ($Y = 127\text{ mm}$) untuk mode privasi / tutup rapat debu; geser ke bawah ($Y = 93\text{ mm}$) ke runway polos untuk mengaktifkan kamera Pixel 5. Slider tidak bisa lepas atau hilang karena terkunci paten di dalam relnya.
 
 ---
 
@@ -151,7 +147,6 @@ Untuk memberikan fleksibilitas saat mencetak dan merakit, tersedia **dua varian 
 | `Pixel5_Main_Chassis_OptionB.stl` | STL Mesh | Sasis utama Opsi B (dengan tombol fleksibel kantilever menyatu) |
 | `Pixel5_Bottom_Cover.stl` | STL Mesh | Pelat penutup bawah + 4 kaki terintegrasi + kisi intake (universal A & B) |
 | `Pixel5_Front_Bezel.stl` | STL Mesh | Frame bezel penahan layar sentuh depan (universal A & B) |
-| `Pixel5_Camera_Slider.stl` | STL Mesh | Pintu geser penutup kamera privasi dovetail (universal A & B) |
 | `Pixel5_Button_Power.stl` | STL Mesh | Tombol daya mandiri untuk Opsi A (dengan retaining lip & ribs) |
 | `Pixel5_Button_Volume.stl` | STL Mesh | Rocker volume mandiri untuk Opsi A (dengan pivot & tactile "+ / -") |
 | `Pixel5_DeckCase_Enclosure.step` | STEP AP214 | File assembly STEP universal untuk Varian Opsi A |
